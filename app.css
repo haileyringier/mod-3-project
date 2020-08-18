@@ -1,20 +1,33 @@
-header {
+nav {
     display: flex;
     justify-content: center;
     align-items: center;
     background-color: maroon;
-    color: white;
-    height: 60px;
-
+    height: 70px;
 }
 
 a {
     text-decoration: none;
     color: white;
     padding: 10px;
+    font-size: 25px;
+}
+#page-name {
+    /* color: maroon; */
+    font-size: 30px;
+    text-align: left;
+    text-transform: capitalize;
 }
 
-#log-in{
-   margin-left: 100px;
+body{
+    /* background-image: url('http://sfwallpaper.com/images/harry-potter-background-11.jpg'); */
     
+}
+
+.character-cards {
+    display: flex;  
+    /* flex-direction: row; */
+    /* background-color: gainsboro; */
+    color: maroon;
+    border: 2px solid black;
 }

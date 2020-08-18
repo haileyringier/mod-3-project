@@ -10,22 +10,13 @@ const routes = {
     '/characters': charactersPage
 }
 
+// const spell = "Lumos!"
+
 function router(event){
     const path = window.location.hash.split("#")[1] || "/"
     const page = routes[path]
 
     main.innerHTML = page()
-
-    // if(page){
-    //     main.innerHTML = page()
-    // } 
-    // else {
-    //     main.innerHTML = `
-    //     <section>
-    //         <h1>ERROR</h1>
-    //     </section>
-    // `
-    // }
 }
 
 window.addEventListener('hashchange', router)
