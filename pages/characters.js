@@ -7,7 +7,7 @@ function charactersPage(){
     }
 
 const charactersUrl = 'http://hp-api.herokuapp.com/api/characters'    
-const characterCardContainer = document.querySelector('#page')
+const characterCardContainer = document.querySelector('#card-container')
 
 function renderCharacters(){
     fetch(charactersUrl)

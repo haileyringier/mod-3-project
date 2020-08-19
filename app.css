@@ -1,9 +1,24 @@
-nav {
-    display: flex;
-    justify-content: center;
+ul {
+    background-color: black;
+    height: 80px;
+    width: 100%;
+    margin: auto;
+    text-align: right;
     align-items: center;
-    background-color: maroon;
-    height: 70px;
+}
+ul li a {
+    text-align: right;
+    color: white;
+    float: none;
+}
+li{
+    display: inline;
+    align-items: center;
+}
+
+li a:hover {
+    color: goldenrod;
+    text-decoration: none;
 }
 
 a {
@@ -11,48 +26,49 @@ a {
     color: white;
     padding: 10px;
     font-size: 25px;
+    text-align: center;
+    
 }
 #page-name {
-    /* color: maroon; */
-    font-size: 30px;
+    color: black;
+    padding: 5px;
+    font-size: 40px;
+    letter-spacing: 2px;
     text-align: left;
-    text-transform: capitalize;
+    background-color: goldenrod;
 }
 
 body{
     /* background-image: url('http://sfwallpaper.com/images/harry-potter-background-11.jpg'); */
-    
+    background-image: url('https://kids.scholastic.com/content/dam/scholastic/kids/Content-Mod-BGs/harry-potter/hp_content-bg_cursed-journey2.jpg');
+
 }
 
 .character-cards {
-    display: flex;
-    flex-wrap: wrap;
     justify-content: space-evenly;
-    flex-direction: row;
     align-content: space-between;
-    margin-top: 100px;
-    border: 2px maroon;
     text-decoration: none;
     color: black;
+    background-color: goldenrod;
     margin: 15px;
     width: 300px;
     text-align: center;
     height: auto;
-    padding: 15px;
+    padding: 1px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
-#page{
-    display: flex;  
-    flex-direction: row;
-    flex-wrap: wrap;
-}
+
 .pictures {
     width: 275px;
     height: 300px;
     margin: 0px;
 }
 #card-container {
-    display: flex;  
-    flex-direction: row;
-    flex-wrap: wrap;
+    /* align-content: center;
+    align-items: center;
+    justify-content: center; */
+    display: grid;  
+    grid-template-columns: 320px 320px 320px;
+    grid-gap: 20px;
+    
 }

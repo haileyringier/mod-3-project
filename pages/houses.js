@@ -1,6 +1,7 @@
 // import {router} from './index.js'
 
 function housesPage(){
+    // window.location.reload(1)
     return (`
         <section>
             <h1>Houses</h1>

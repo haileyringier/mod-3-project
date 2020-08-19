@@ -7,7 +7,7 @@ import {hufflepuffPage} from './pages/hufflepuff.js'
 import {ravenclawPage} from './pages/ravenclaw.js'
 
 
-const main = document.querySelector('#page')
+const pageName = document.querySelector('#page')
 const routes = {
     '/': homePage,
     '/houses': housesPage,
@@ -22,9 +22,10 @@ const routes = {
 
 function router(event){
     const path = window.location.hash.split("#")[1] || "/"
+
     const page = routes[path]
 
-    main.innerHTML = page()
+    pageName.innerHTML = page()
 }
 
 window.addEventListener('hashchange', router)

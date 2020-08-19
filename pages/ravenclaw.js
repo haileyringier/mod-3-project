@@ -5,9 +5,8 @@ function ravenclawPage(){
     `)
     }
 
-// const charactersUrl = 'http://hp-api.herokuapp.com/api/characters/house/ravenclaw'    
 const charactersUrl = 'http://localhost:3000/characters'
-const characterCardContainer = document.querySelector('#page')
+const characterCardContainer = document.querySelector('#card-container')
 
 function renderCharacters(){
     fetch(charactersUrl)
