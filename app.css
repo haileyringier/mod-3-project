@@ -27,8 +27,8 @@ a {
     padding: 10px;
     font-size: 25px;
     text-align: center;
-    
 }
+
 #page-name {
     color: black;
     padding: 5px;
@@ -39,9 +39,7 @@ a {
 }
 
 body{
-    /* background-image: url('http://sfwallpaper.com/images/harry-potter-background-11.jpg'); */
     background-image: url('https://kids.scholastic.com/content/dam/scholastic/kids/Content-Mod-BGs/harry-potter/hp_content-bg_cursed-journey2.jpg');
-
 }
 
 .character-cards {
@@ -80,11 +78,27 @@ body{
 }
 
 #houses-list{
+    background-color: black;
+    width: 300px;
+    height: 200px;
+    text-align: center;
     align-items: center;
     display: flex;
+    flex-direction: column;
+    border: 1px solid goldenrod;
+    padding: 0px;
 }
 
-#house-name{
-    color:white;    
+#name-of-page{
+    color: white;
     text-align: center;
+}
+.house-link{
+    padding: 10px;
+}
+#music {
+    text-align: center;
+}
+iframe {
+    margin-top: 20px;
 }

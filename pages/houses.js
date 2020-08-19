@@ -3,13 +3,13 @@
 function housesPage(){
     // window.location.reload(1)
     return (`
-        <section id="houses-list">
-            <h1>Houses</h1>
-            <a href="#/gryffindor">Gryffindor</a></li>
-            <a href="#/ravenclaw">Ravenclaw</a>
-            <a href="#/slytherin">Slytherin</a>
-            <a href="#/hufflepuff">Hufflepuff</a>
-        </section>
+        <h1 id="name-of-page">Houses</h1>
+            <ul id="houses-list">
+                <li id="house-link"><a class="house-link" href="#/gryffindor">Gryffindor</a></li>
+                <li id="house-link"><a class="house-link" href="#/ravenclaw">Ravenclaw</a></li>
+                <li id="house-link"><a class="house-link" href="#/slytherin">Slytherin</a></li>
+                <li id="house-link"><a class="house-link" href="#/hufflepuff">Hufflepuff</a></li>
+            </ul>
         `)
     }
 

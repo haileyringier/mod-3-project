@@ -1,8 +1,7 @@
 function ravenclawPage(){
-    
     renderCharacters()
     return (`
-        <h1 id="house-name">Ravenclaw</h1>
+        <h1 id="name-of-page">Ravenclaw</h1>
     `)
 }
 

@@ -1,7 +1,7 @@
 function hufflepuffPage(){
     renderCharacters()
     return (`
-        <h1 id="house-name">HufflePuff</h1>
+        <h1 id="name-of-page">HufflePuff</h1>
     `)
 }
 

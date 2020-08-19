@@ -3,7 +3,7 @@ const characterCardContainer = document.querySelector('#card-container')
 function slytherinPage(){
     renderCharacters()
     return (`
-        <h1 id="house-name">Slytherin</h1>
+        <h1 id="name-of-page">Slytherin</h1>
     `)
     }
 
