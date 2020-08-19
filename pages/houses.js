@@ -3,7 +3,7 @@
 function housesPage(){
     // window.location.reload(1)
     return (`
-        <section>
+        <section id="houses-list">
             <h1>Houses</h1>
             <a href="#/gryffindor">Gryffindor</a></li>
             <a href="#/ravenclaw">Ravenclaw</a>

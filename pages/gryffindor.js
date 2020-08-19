@@ -1,4 +1,7 @@
+const characterCardContainer = document.querySelector('#card-container')
+
 function gryffindorPage(){
+    characterCardContainer.innerHTML = `<div id="card-container"></div>`
     renderCharacters()
     return (`
         <h1 id="house-name">Gryffindor</h1>
@@ -7,7 +10,6 @@ function gryffindorPage(){
 
 // const charactersUrl = 'http://hp-api.herokuapp.com/api/characters/house/gryffindor'    
 const charactersUrl = 'http://localhost:3000/characters'
-const characterCardContainer = document.querySelector('#card-container')
 
 function renderCharacters(){
     fetch(charactersUrl)

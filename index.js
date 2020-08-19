@@ -18,14 +18,19 @@ const routes = {
     '/hufflepuff': hufflepuffPage
 }
 
-// const spell = "Lumos!"
 
 function router(event){
     const path = window.location.hash.split("#")[1] || "/"
 
     const page = routes[path]
 
+    pageReset()
     pageName.innerHTML = page()
+}
+
+function pageReset(){
+    const characterCardContainer = document.querySelector('#card-container')
+    characterCardContainer.innerHTML = `<div id="card-container"></div>`
 }
 
 window.addEventListener('hashchange', router)

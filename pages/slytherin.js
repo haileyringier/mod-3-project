@@ -1,3 +1,5 @@
+const characterCardContainer = document.querySelector('#card-container')
+
 function slytherinPage(){
     renderCharacters()
     return (`
@@ -7,7 +9,6 @@ function slytherinPage(){
 
 // const charactersUrl = 'http://hp-api.herokuapp.com/api/characters/house/slytherin'    
 const charactersUrl = 'http://localhost:3000/characters'
-const characterCardContainer = document.querySelector('#card-container')
 
 function renderCharacters(){
     fetch(charactersUrl)

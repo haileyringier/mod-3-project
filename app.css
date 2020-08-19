@@ -64,11 +64,27 @@ body{
     margin: 0px;
 }
 #card-container {
-    /* align-content: center;
+    align-content: center;
     align-items: center;
-    justify-content: center; */
+    justify-content: center;
     display: grid;  
     grid-template-columns: 320px 320px 320px;
     grid-gap: 20px;
     
+}
+
+.page{
+    display: grid;  
+    grid-template-columns: 320px 320px 320px;
+    grid-gap: 20px;
+}
+
+#houses-list{
+    align-items: center;
+    display: flex;
+}
+
+#house-name{
+    color:white;    
+    text-align: center;
 }
