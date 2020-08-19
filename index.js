@@ -8,6 +8,7 @@ import {ravenclawPage} from './pages/ravenclaw.js'
 
 
 const pageName = document.querySelector('#page')
+const characterForm = document.getElementById('character-form')
 const routes = {
     '/': homePage,
     '/houses': housesPage,
@@ -36,4 +37,4 @@ function pageReset(){
 window.addEventListener('hashchange', router)
 window.addEventListener('load', router)
 
-export {router} 
+export {router, characterForm} 

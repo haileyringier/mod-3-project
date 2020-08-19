@@ -1,5 +1,7 @@
+import {characterForm} from '../index.js'
 
 function homePage(){
+   addCharacterForm(characterForm)
     return (`
         <section id="music">
             <h1 id="name-of-page">Welcome to the wizarding world!</h1>
@@ -18,18 +20,8 @@ function homePage(){
 
 function addCharacterForm(form){
     event.preventDefault()
-    characterForm.addEventListener('submit', () => console.log("HELLO"))
-    console.log("ITS WORKING")
+    console.log(form)
+    form.addEventListener('submit', console.log("TRIGGERED"))
 }
 
 export {homePage}
-// const characterForm = document.getElementById('character-form')
-//         characterForm.innerHTML = `
-//             <form id="character-form"> Add a Character
-//                 <input type="text" name="name" placeholder="Name">
-//                 <input name="house" placeholder="House">
-//                 <input name="ancestry" placeholder="Ancestry">
-//                 <input name="image" placeholder="photo url">
-//                 <input type="submit" value="submit">
-//             </form>
-//         `
