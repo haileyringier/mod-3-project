@@ -25,9 +25,34 @@ body{
 }
 
 .character-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    flex-direction: row;
+    align-content: space-between;
+    margin-top: 100px;
+    border: 2px maroon;
+    text-decoration: none;
+    color: black;
+    margin: 15px;
+    width: 300px;
+    text-align: center;
+    height: auto;
+    padding: 15px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+#page{
     display: flex;  
-    /* flex-direction: row; */
-    /* background-color: gainsboro; */
-    color: maroon;
-    border: 2px solid black;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.pictures {
+    width: 275px;
+    height: 300px;
+    margin: 0px;
+}
+#card-container {
+    display: flex;  
+    flex-direction: row;
+    flex-wrap: wrap;
 }
