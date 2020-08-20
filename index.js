@@ -1,4 +1,4 @@
-import {homePage} from './pages/home.js'
+import {homePage, addCharacterForm} from './pages/home.js'
 import {charactersPage} from './pages/characters.js'
 import {housesPage} from './pages/houses.js'
 import {gryffindorPage} from './pages/gryffindor.js'
@@ -36,5 +36,6 @@ function pageReset(){
 
 window.addEventListener('hashchange', router)
 window.addEventListener('load', router)
+characterForm.addEventListener('submit', (event) => addCharacterForm(characterForm, event))
 
 export {router, characterForm} 

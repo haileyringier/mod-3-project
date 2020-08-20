@@ -1,7 +1,10 @@
 import {characterForm} from '../index.js'
 
 function homePage(){
-   addCharacterForm(characterForm)
+    
+//    characterForm.addEventListener('submit', (event) => addCharacterForm(characterForm, event))
+   
+//    addCharacterForm(characterForm)
     return (`
         <section id="music">
             <h1 id="name-of-page">Welcome to the wizarding world!</h1>
@@ -18,10 +21,10 @@ function homePage(){
 }
 
 
-function addCharacterForm(form){
+function addCharacterForm(form, event){
     event.preventDefault()
-    console.log(form)
-    form.addEventListener('submit', console.log("TRIGGERED"))
+    console.log("HEEEEEE")
+
 }
 
-export {homePage}
+export {homePage, addCharacterForm}
