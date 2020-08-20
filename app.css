@@ -106,3 +106,20 @@ form{
     background-color: goldenrod;
     text-align: center;
 }
+
+#house-results {
+    color: white;
+}
+#prompt{
+    color: white;
+    text-align: center;
+}
+#sorting-button{
+    align-items: center;
+    align-self: center;
+    align-content: center;
+    
+}
+#sorting-stuff{
+    align-content: center;
+}

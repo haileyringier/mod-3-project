@@ -5,10 +5,10 @@ import {gryffindorPage} from './pages/gryffindor.js'
 import {slytherinPage} from './pages/slytherin.js'
 import {hufflepuffPage} from './pages/hufflepuff.js'
 import {ravenclawPage} from './pages/ravenclaw.js'
+import {sortingHatPage} from './pages/sortinghat.js'
 
 
 const pageName = document.querySelector('#page')
-// const characterForm = document.getElementById('character-form')
 const routes = {
     '/': homePage,
     '/houses': housesPage,
@@ -16,7 +16,8 @@ const routes = {
     '/gryffindor': gryffindorPage,
     '/ravenclaw': ravenclawPage,
     '/slytherin': slytherinPage,
-    '/hufflepuff': hufflepuffPage
+    '/hufflepuff': hufflepuffPage,
+    '/sortinghat': sortingHatPage
 }
 
 
@@ -35,6 +36,11 @@ function pageReset(){
 
     const characterForm = document.getElementById('character-form')
     characterForm.innerHTML =  `<form id="character-form"></form>`
+
+    MediaDeviceInfo.innerHTML = `<main></main>`
+
+    // const sortingButton = document.getElementById('sorting-button')
+    // sortingButton.innerHTML = `<button id="sorting-button"><a href="http://localhost:3001/#/sortinghat">Sorting Hat</button>`
 }
 
 window.addEventListener('hashchange', router)
