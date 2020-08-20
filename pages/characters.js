@@ -35,20 +35,21 @@ function createCharacterCards(characters){
         house.innerText = `House: ${character.house}`
         deleteButton.innerText = "X"
 
-        deleteButton.addEventListener('click', () => deleteCharacter())
+        deleteButton.addEventListener('click', (event) => deleteCharacter(event, character.id))
 
         card.append(name, deleteButton, picture, house, ancestry)
         characterCardContainer.appendChild(card)
     })
 }
 
-function deleteCharacter(){
-    const characterId = event.target.parentNode.id
-    console.log(characterId)
+function deleteCharacter(event, id){
+    // const characterId = event.target.parentNode.id
+    console.log(id)
+    console.log(event)
     console.log(event.target.parentNode)
     event.target.parentNode.remove()
 
-    fetch(`http://localhost:3000/characters/${characterId}`, {
+    fetch(`http://localhost:3000/characters/${id}`, {
         method: 'DELETE'
     })
 }
