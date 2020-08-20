@@ -106,3 +106,6 @@ form{
     background-color: goldenrod;
     text-align: center;
 }
+button{
+    cursor: pointer;
+}
