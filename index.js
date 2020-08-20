@@ -1,4 +1,4 @@
-import {homePage, addCharacterForm} from './pages/home.js'
+import {homePage} from './pages/home.js'
 import {charactersPage} from './pages/characters.js'
 import {housesPage} from './pages/houses.js'
 import {gryffindorPage} from './pages/gryffindor.js'
@@ -8,7 +8,7 @@ import {ravenclawPage} from './pages/ravenclaw.js'
 
 
 const pageName = document.querySelector('#page')
-const characterForm = document.getElementById('character-form')
+// const characterForm = document.getElementById('character-form')
 const routes = {
     '/': homePage,
     '/houses': housesPage,
@@ -32,10 +32,12 @@ function router(event){
 function pageReset(){
     const characterCardContainer = document.querySelector('#card-container')
     characterCardContainer.innerHTML = `<div id="card-container"></div>`
+
+    const characterForm = document.getElementById('character-form')
+    characterForm.innerHTML =  `<form id="character-form"></form>`
 }
 
 window.addEventListener('hashchange', router)
 window.addEventListener('load', router)
-characterForm.addEventListener('submit', (event) => addCharacterForm(characterForm, event))
 
-export {router, characterForm} 
+export {router} 

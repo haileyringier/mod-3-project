@@ -102,3 +102,7 @@ body{
 iframe {
     margin-top: 20px;
 }
+form{
+    background-color: goldenrod;
+    text-align: center;
+}
