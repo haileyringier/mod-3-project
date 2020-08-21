@@ -1,5 +1,5 @@
-import {homePage, characterForm} from './pages/home.js'
-import {charactersPage} from './pages/characters.js'
+import {homePage} from './pages/home.js'
+import {charactersPage, characterForm} from './pages/characters.js'
 import {housesPage} from './pages/houses.js'
 import {gryffindorPage} from './pages/gryffindor.js'
 import {slytherinPage} from './pages/slytherin.js'

@@ -1,6 +1,6 @@
 ul {
     background-color: black;
-    height: 80px;
+    height: 40px;
     width: 100%;
     margin: auto;
     text-align: right;
@@ -36,10 +36,18 @@ a {
     letter-spacing: 2px;
     text-align: left;
     background-color: goldenrod;
+    margin: 0px;
 }
 
 body{
     background-image: url('https://kids.scholastic.com/content/dam/scholastic/kids/Content-Mod-BGs/harry-potter/hp_content-bg_cursed-journey2.jpg');
+
+    font-family: 'Fjalla One', sans-serif;
+}
+#body{
+    font-family: 'Fjalla One', sans-serif;
+    align-items: center;
+    align-content: center;
 }
 
 .character-cards {
@@ -62,8 +70,6 @@ body{
     margin: 0px;
 }
 #card-container {
-    align-content: center;
-    align-items: center;
     justify-content: center;
     display: grid;  
     grid-template-columns: 320px 320px 320px;
@@ -85,13 +91,31 @@ body{
     align-items: center;
     display: flex;
     flex-direction: column;
-    border: 1px solid goldenrod;
+    border: 2px solid goldenrod;
     padding: 0px;
+    box-shadow: 0 4px 8px 0 goldenrod, 0 6px 20px 0 goldenrod;
+    margin-top: 30px;
 }
 
 #name-of-page{
     color: white;
     text-align: center;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    /* background-color: black; */
+    text-align: center;
+    margin: auto;
+    width: 20%;
+}
+#welcome-page{
+    color: white;
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    /* background-color: black; */
+    text-align: center;
+    margin: auto;
+    width: 40%;
 }
 .house-link{
     padding: 10px;
@@ -100,11 +124,14 @@ body{
     text-align: center;
 }
 iframe {
-    margin-top: 20px;
+    margin-top: 30px;
 }
 form{
-    background-color: goldenrod;
+    /* background-color: black; */
+    height: 50px;
     text-align: center;
+    align-items: center;
+    margin: 40px;
 }
 
 #house-results {
@@ -114,12 +141,51 @@ form{
     color: white;
     text-align: center;
 }
+
 #sorting-button{
-    align-items: center;
-    align-self: center;
-    align-content: center;
+    font-size: 30px;
+    background-color: white;
+    box-shadow: 0 4px 8px 0 goldenrod, 0 6px 20px 0 goldenrod;
+    border: 2px solid goldenrod;
+    margin: auto;
     
 }
 #sorting-stuff{
     align-content: center;
+}
+input{
+    width: 150px;
+    background-color: goldenrod;
+    color: black;
+    border: 1px solid goldenrod;
+    box-shadow: 0 2px 4px 0 goldenrod, 0 6px 20px 0 goldenrod;
+}
+select{
+    background-color:goldenrod;
+    color: black;
+    border: 1px solid goldenrod;
+    box-shadow: 0 2px 4px 0 goldenrod, 0 6px 20px 0 goldenrod;
+}
+label {
+    color:white;
+    font-weight: bold;
+    font-size: 20px;
+    margin-left: 15px;
+    background-color: black;
+}
+#submit{
+    color: goldenrod;
+    background: black;
+    margin-left: 10px;;
+}
+#delete-button{
+    background-color: black;
+    color: goldenrod;
+    display: flex;
+    float: right;
+}
+#house-results{
+    margin: auto;
+    text-align: center;
+    color: goldenrod;
 }
