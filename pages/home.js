@@ -1,7 +1,7 @@
-// import {characterForm} from '../index.js'
+const characterForm = document.getElementById('character-form')
 
 function homePage(){
-    const characterForm = document.getElementById('character-form')
+    characterForm.style.display = 'block'
     characterForm.innerHTML = `
             <form id="character-form"> Add a Character
                 <input type="text" name="name" placeholder="Name">
@@ -25,7 +25,6 @@ function homePage(){
                 <input type="submit" value="Add Character!">
             </form>
     `
-    console.log(characterForm)
     characterForm.addEventListener('submit', (event) => {
         event.preventDefault()
         characterFormData(characterForm)
@@ -54,7 +53,6 @@ function characterFormData(form){
         image: characterImage
     }
 
-
     fetch(charactersUrl, {
         method: 'POST', 
         headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' },
@@ -65,5 +63,4 @@ function characterFormData(form){
     form.reset()
 }
 
-
-export {homePage}
+export {homePage, characterForm}

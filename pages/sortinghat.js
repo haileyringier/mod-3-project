@@ -1,9 +1,9 @@
-
+const sortingButton = document.createElement('button')
 
 function sortingHatPage () {
     const main = document.querySelector('main')
-    const sortingButton = document.createElement('button')
     sortingButton.id="sorting-button"
+    sortingButton.style.display = 'block'
     sortingButton.innerText = "Sorting Hat"
     main.append(sortingButton)
 
@@ -16,28 +16,13 @@ function sortingHatPage () {
     `)
 }
 
-
 function sortingHat(){
     const houses = ["Gryffindor", "Hufflepuff", "Ravenclaw", "Slytherin"]
     const randomHouse = houses[Math.floor(Math.random()*houses.length)]
     const results = document.getElementById('house-results')
     console.log(randomHouse)
 
-    results.innerText = `${randomHouse}`
+    results.innerText = `You belong in ${randomHouse}!`
 }
 
-// function sortingHatGame(){
-//     console.log('hmm where to put you')
-// }
-
-// const quizContainer = document.getElementById('sorting-quiz')
-// const resultsContainer =document.getElementById('sorting-results')
-// const submitButton = document.getElementById('sorting-submit')
-// submitButton.addEventListener('click', showResults)
-
-// function buildQuiz(){
-// }
-// function showResults(){
-// }
-
-export {sortingHatPage}
+export {sortingHatPage, sortingButton}

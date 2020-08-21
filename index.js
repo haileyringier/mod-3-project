@@ -1,11 +1,11 @@
-import {homePage} from './pages/home.js'
+import {homePage, characterForm} from './pages/home.js'
 import {charactersPage} from './pages/characters.js'
 import {housesPage} from './pages/houses.js'
 import {gryffindorPage} from './pages/gryffindor.js'
 import {slytherinPage} from './pages/slytherin.js'
 import {hufflepuffPage} from './pages/hufflepuff.js'
 import {ravenclawPage} from './pages/ravenclaw.js'
-import {sortingHatPage} from './pages/sortinghat.js'
+import {sortingHatPage, sortingButton} from './pages/sortinghat.js'
 
 
 const pageName = document.querySelector('#page')
@@ -34,13 +34,9 @@ function pageReset(){
     const characterCardContainer = document.querySelector('#card-container')
     characterCardContainer.innerHTML = `<div id="card-container"></div>`
 
-    const characterForm = document.getElementById('character-form')
-    characterForm.innerHTML =  `<form id="character-form"></form>`
+    characterForm.style.display = 'none'
+    sortingButton.style.display = 'none'
 
-    MediaDeviceInfo.innerHTML = `<main></main>`
-
-    // const sortingButton = document.getElementById('sorting-button')
-    // sortingButton.innerHTML = `<button id="sorting-button"><a href="http://localhost:3001/#/sortinghat">Sorting Hat</button>`
 }
 
 window.addEventListener('hashchange', router)

@@ -5,7 +5,6 @@ function hufflepuffPage(){
     `)
 }
 
-// const charactersUrl = 'http://hp-api.herokuapp.com/api/characters/house/hufflepuff'    
 const charactersUrl = 'http://localhost:3000/characters'
 const characterCardContainer = document.querySelector('#card-container')
 

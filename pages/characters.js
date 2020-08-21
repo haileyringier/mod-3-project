@@ -1,15 +1,13 @@
 
-// import {spell} from '../index.js'
-
 function charactersPage(){
     renderCharacters()
     return (`
-        <h1 id="name-of-page">All Characters</h1>
+    <h1 id="name-of-page">All Characters</h1>
     `)
 }
 
-const charactersUrl = 'http://localhost:3000/characters'
 const characterCardContainer = document.querySelector('#card-container')
+const charactersUrl = 'http://localhost:3000/characters'
 
 function renderCharacters(){
     fetch(charactersUrl)
@@ -43,10 +41,6 @@ function createCharacterCards(characters){
 }
 
 function deleteCharacter(event, id){
-    // const characterId = event.target.parentNode.id
-    console.log(id)
-    console.log(event)
-    console.log(event.target.parentNode)
     event.target.parentNode.remove()
 
     fetch(`http://localhost:3000/characters/${id}`, {
